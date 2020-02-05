@@ -21,8 +21,6 @@ class ofApp : public ofBaseApp{
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
 
-		static const int NUM = 100;
-
-		ofVec2f location[NUM];
-		ofVec2f velocity[NUM];
+		vector<ofVec2f> location;
+		vector<ofVec2f> velocity;
 };
