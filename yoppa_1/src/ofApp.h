@@ -21,6 +21,8 @@ class ofApp : public ofBaseApp{
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
 
+		static const int max_num = 500;
+
 		vector<ofVec2f> location;
 		vector<ofVec2f> velocity;
 };

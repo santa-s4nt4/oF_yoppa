@@ -13,6 +13,10 @@ void ofApp::update(){
 	}
 	location.push_back(ofVec2f(ofGetWidth() / 2, ofGetHeight() / 2));
 	velocity.push_back(ofVec2f(ofRandom(-10, 10), ofRandom(-10, 10)));
+	if (location.size() > max_num) {
+		location.erase(location.begin());
+		velocity.erase(velocity.begin());
+	}
 }
 
 //--------------------------------------------------------------
