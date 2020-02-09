@@ -6,10 +6,9 @@ RandomWalker::RandomWalker() {
 }
 
 void RandomWalker::draw() {
-	for (int i = 10; i < 10; i++) {
+	for (int i = 0; i < 10; i++) {
 		position.x += ofRandom(-1, 1);
 		position.y += ofRandom(-1, 1);
-
 		if (position.x < 0) {
 			position.x = ofGetWidth();
 		}
@@ -22,7 +21,6 @@ void RandomWalker::draw() {
 		if (position.y > ofGetHeight()) {
 			position.y = 0;
 		}
-
 		ofDrawCircle(position.x, position.y, 2);
 	}
 }
