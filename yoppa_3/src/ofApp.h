@@ -9,8 +9,10 @@ class ofApp : public ofBaseApp{
 		void update();
 		void draw();
 
-		ofBoxPrimitive box;
-		ofSpherePrimitive sphere;
+		//ofBoxPrimitive box;
+		// ofSpherePrimitive sphere;
 		ofEasyCam cam;
-		ofLight light;
+		ofVboMesh mesh;
+		//ofLight light;
+		int w, h;
 };
