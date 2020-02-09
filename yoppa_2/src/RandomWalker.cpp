@@ -1,14 +1,19 @@
 #include "RandomWalker.h"
 
 RandomWalker::RandomWalker() {
-	position.x = ofRandom(ofGetWidth());
-	position.y = ofRandom(ofGetHeight());
+	position.x = ofGetWidth()/2.0;
+	position.y = ofGetHeight()/2.0;
+
+	left = ofRandom(0.9, 1.0);
+	right = ofRandom(0.9, 1.0);
+	top = ofRandom(0.9, 1.0);
+	bottom = ofRandom(0.9, 1.0);
 }
 
 void RandomWalker::draw() {
 	for (int i = 0; i < 10; i++) {
-		position.x += ofRandom(-1, 1);
-		position.y += ofRandom(-1, 1);
+		position.x += ofRandom(-left, right);
+		position.y += ofRandom(-top, bottom);
 		if (position.x < 0) {
 			position.x = ofGetWidth();
 		}
@@ -21,6 +26,6 @@ void RandomWalker::draw() {
 		if (position.y > ofGetHeight()) {
 			position.y = 0;
 		}
-		ofDrawCircle(position.x, position.y, 2);
+		ofDrawCircle(position.x, position.y, 1);
 	}
 }

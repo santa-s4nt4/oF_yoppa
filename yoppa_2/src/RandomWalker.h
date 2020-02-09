@@ -9,4 +9,5 @@ public:
 	void draw();
 
 	ofVec2f position;
+	float left, right, top, bottom;
 };
