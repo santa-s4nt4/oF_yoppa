@@ -11,4 +11,5 @@ class ofApp : public ofBaseApp{
 
 		ofBoxPrimitive box;
 		ofSpherePrimitive sphere;
+		ofEasyCam cam;
 };

@@ -12,7 +12,9 @@ void ofApp::update(){
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-	ofTranslate(ofGetWidth() / 2, ofGetHeight() / 2);
+	cam.begin();
+
+	//ofTranslate(ofGetWidth() / 2, ofGetHeight() / 2);
 	ofSetColor(255);
 
 	box.set(200);
@@ -22,4 +24,6 @@ void ofApp::draw(){
 	sphere.set(100, 16);
 	sphere.setPosition(150, 0, 0);
 	sphere.drawWireframe();
+
+	cam.end();
 }
