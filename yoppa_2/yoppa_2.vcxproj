@@ -180,13 +180,13 @@
     <PostBuildEvent />
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="RandomWalker.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\ofApp.cpp" />
+    <ClCompile Include="src\RandomWalker.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="RandomWalker.h" />
     <ClInclude Include="src\ofApp.h" />
+    <ClInclude Include="src\RandomWalker.h" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="$(OF_ROOT)\libs\openFrameworksCompiled\project\vs\openframeworksLib.vcxproj">

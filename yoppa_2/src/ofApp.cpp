@@ -15,6 +15,6 @@ void ofApp::update(){
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-	ofSetColor(255, 5);
+	ofSetColor(255, 255, 255, 5);
 	walker.draw();
 }
