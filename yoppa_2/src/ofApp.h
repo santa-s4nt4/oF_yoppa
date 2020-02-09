@@ -10,5 +10,5 @@ class ofApp : public ofBaseApp{
 		void update();
 		void draw();
 
-		RandomWalker walker;
+		RandomWalker walker[100];
 };
