@@ -14,5 +14,4 @@ class ofApp : public ofBaseApp{
 		ofEasyCam cam;
 		ofVboMesh mesh;
 		//ofLight light;
-		int w, h;
 };
